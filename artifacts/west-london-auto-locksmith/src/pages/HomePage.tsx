@@ -77,7 +77,7 @@ export default function HomePage() {
         <a
           href={hasPhone ? `tel:${siteContent.business.phone.replace(/\s/g, "")}` : "/contact"}
           onClick={() => trackCallClick("hero")}
-          className="flex items-center justify-center gap-3 w-full max-w-3xl mx-auto px-8 py-5 bg-[#C9A227] text-[#121212] font-bold text-xl rounded hover:bg-[#A88417] transition-colors min-h-[64px]"
+          className="flex items-center justify-center gap-3 w-full max-w-3xl mx-auto px-4 py-5 bg-[#C9A227] text-[#121212] font-bold text-base sm:text-xl rounded hover:bg-[#A88417] transition-colors min-h-[64px] whitespace-nowrap"
           data-testid="button-call-hero"
         >
           <Phone size={24} />
