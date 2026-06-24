@@ -5,6 +5,7 @@ export const siteContent = {
     tagline: "Vehicle Lockouts Only",
     phone: "020 3488 0390",
     phoneDisplay: "020 3488 0390",
+    email: "info@westlondonautolocksmith.co.uk",
     whatsappEnabled: false,
     whatsappNumber: "",
     baseArea: "Uxbridge",

@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Phone } from "lucide-react";
+import { Phone, Mail } from "lucide-react";
 import { siteContent } from "@/content/siteContent";
 import { trackCallClick } from "@/lib/analytics";
 
@@ -45,6 +45,16 @@ export default function SiteFooter() {
               >
                 <Phone size={16} />
                 {siteContent.business.phone}
+              </a>
+            )}
+            {siteContent.business.email && (
+              <a
+                href={`mailto:${siteContent.business.email}`}
+                className="inline-flex items-center gap-2 text-white/60 text-sm hover:text-[#C9A227] transition-colors mt-2"
+                data-testid="link-email-footer"
+              >
+                <Mail size={14} />
+                {siteContent.business.email}
               </a>
             )}
           </div>
