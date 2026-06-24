@@ -228,6 +228,58 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Photo collage */}
+      <section className="bg-white py-10 px-4" data-testid="section-photo-collage">
+        <div className="max-w-4xl mx-auto">
+          {/* Mosaic grid: 3 cols × 2 rows */}
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
+            {/* Top-left: wide car shot spans 2 cols */}
+            <div className="col-span-2 md:col-span-2 aspect-[16/9] overflow-hidden rounded-lg">
+              <img
+                src="/images/job4.png"
+                alt="West London Auto Locksmith vehicle"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            {/* Top-right: portrait */}
+            <div className="col-span-1 aspect-[3/4] overflow-hidden rounded-lg hidden md:block">
+              <img
+                src="/images/job3.png"
+                alt="West London Auto Locksmith technician"
+                className="w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+            {/* Bottom row: 3 square-ish shots */}
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img
+                src="/images/job1.png"
+                alt="West London Auto Locksmith branded vehicle"
+                className="w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img
+                src="/images/job2.png"
+                alt="Technician opening a locked car"
+                className="w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img
+                src="/images/job5.png"
+                alt="Technician working on a vehicle door"
+                className="w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Reviews (hidden if empty) */}
       <ReviewsList />
 
