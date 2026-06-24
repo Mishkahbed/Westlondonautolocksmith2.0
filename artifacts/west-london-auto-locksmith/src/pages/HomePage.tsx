@@ -97,15 +97,6 @@ export default function HomePage() {
             <span className="block text-2xl sm:text-3xl md:text-4xl">Locked Out of Your Car?</span>
             <span className="block text-3xl sm:text-4xl md:text-5xl">We Can Help</span>
           </h1>
-          <p className="text-base md:text-lg text-white/75 mb-4 max-w-xl mx-auto leading-relaxed">
-            Vehicle entry across Uxbridge and surrounding areas. Call for a clear price and
-            estimated arrival time before we travel.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-sm text-white/50">
-            <span>Vehicle lockouts only</span>
-            <span className="hidden sm:inline">·</span>
-            <span>Uxbridge and surrounding areas, up to around 12 miles</span>
-          </div>
         </div>
       </section>
 
