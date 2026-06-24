@@ -106,19 +106,26 @@ export default function HomePage() {
 
       {/* Photo collage — directly under hero */}
       <section className="bg-[#121212] px-4 pt-4 pb-6" data-testid="section-photo-collage">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-4xl mx-auto flex flex-col gap-2 md:gap-3">
+          {/* Top row: wide shot + portrait */}
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
-            <div className="col-span-2 md:col-span-2 aspect-[16/9] overflow-hidden rounded-lg">
+            <div className="col-span-2 aspect-[16/9] overflow-hidden rounded-lg">
               <img src="/images/job4.png" alt="West London Auto Locksmith vehicle" className="w-full h-full object-cover" loading="lazy" />
             </div>
-            <div className="col-span-1 aspect-[3/4] overflow-hidden rounded-lg hidden md:block">
-              <img src="/images/job3.png" alt="West London Auto Locksmith technician" className="w-full h-full object-cover object-top" loading="lazy" />
+            <div className="col-span-1 overflow-hidden rounded-lg hidden md:block">
+              <img src="/images/job6.png" alt="West London Auto Locksmith technician by van" className="w-full h-full object-cover object-top" loading="lazy" />
             </div>
+          </div>
+          {/* Bottom row: 4 squares */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
             <div className="aspect-square overflow-hidden rounded-lg">
               <img src="/images/job1.png" alt="West London Auto Locksmith branded vehicle" className="w-full h-full object-cover" loading="lazy" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
               <img src="/images/job2.png" alt="Technician opening a locked car" className="w-full h-full object-cover object-top" loading="lazy" />
+            </div>
+            <div className="aspect-square overflow-hidden rounded-lg">
+              <img src="/images/job3.png" alt="West London Auto Locksmith technician" className="w-full h-full object-cover object-top" loading="lazy" />
             </div>
             <div className="aspect-square overflow-hidden rounded-lg">
               <img src="/images/job5.png" alt="Technician working on a vehicle door" className="w-full h-full object-cover object-top" loading="lazy" />
