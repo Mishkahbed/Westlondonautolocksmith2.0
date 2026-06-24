@@ -58,6 +58,13 @@ export default function SiteHeader() {
           </a>
         </div>
 
+        {/* Tagline strip — scrolls away with the logo */}
+        <div className="bg-[#1a1a1a] border-t border-white/10 px-4 py-2.5 text-center">
+          <p className="text-white/80 text-sm font-medium tracking-wide leading-snug">
+            Vehicle lockout specialists&nbsp;&nbsp;·&nbsp;&nbsp;Fast quote and ETA confirmed before dispatch
+          </p>
+        </div>
+
       </header>
 
       {/* ── Sticky: pins to top once logo scrolls away ── */}
