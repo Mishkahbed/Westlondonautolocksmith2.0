@@ -73,7 +73,7 @@ export default function HomePage() {
       }}
     >
       {/* Hero */}
-      <section className="bg-[#121212] text-white py-16 md:py-20 px-4" data-testid="section-hero">
+      <section className="bg-[#121212] text-white pt-16 md:pt-20 pb-6 px-4" data-testid="section-hero">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-4 text-white">
             Locked Out of Your Car in West London?
@@ -105,7 +105,7 @@ export default function HomePage() {
       </section>
 
       {/* Photo collage — directly under hero */}
-      <section className="bg-[#121212] px-4 pb-6" data-testid="section-photo-collage">
+      <section className="bg-[#121212] px-4 pt-4 pb-6" data-testid="section-photo-collage">
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
             <div className="col-span-2 md:col-span-2 aspect-[16/9] overflow-hidden rounded-lg">
