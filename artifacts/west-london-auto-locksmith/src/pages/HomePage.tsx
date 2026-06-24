@@ -93,8 +93,9 @@ export default function HomePage() {
       {/* Hero heading + subtext */}
       <section className="bg-[#121212] text-white pt-6 pb-6 px-4" data-testid="section-hero">
         <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight mb-4 text-white whitespace-nowrap">
-            Locked Out of Your Car?<br />We Can Help
+          <h1 className="font-bold leading-tight mb-4 text-white whitespace-nowrap">
+            <span className="block text-2xl sm:text-3xl md:text-4xl">Locked Out of Your Car?</span>
+            <span className="block text-3xl sm:text-4xl md:text-5xl">We Can Help</span>
           </h1>
           <p className="text-base md:text-lg text-white/75 mb-4 max-w-xl mx-auto leading-relaxed">
             Vehicle entry across Uxbridge and surrounding areas. Call for a clear price and
