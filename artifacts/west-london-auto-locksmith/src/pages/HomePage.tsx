@@ -165,6 +165,31 @@ export default function HomePage() {
       </section>
 
 
+      {/* Review card — below second CTA */}
+      <section className="bg-[#121212] px-4 pb-8" data-testid="section-home-review">
+        <div className="max-w-3xl mx-auto">
+          <article className="bg-[#1e1e1e] border border-white/10 rounded-lg p-5">
+            <div className="flex gap-0.5 mb-3">
+              {[1,2,3,4,5].map(s => (
+                <svg key={s} className="w-4 h-4 text-[#C9A227]" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                </svg>
+              ))}
+            </div>
+            <blockquote className="text-sm text-white/80 leading-relaxed whitespace-pre-line">
+              "Great service this morning, arrived in 20 minutes to assist the keys being locked inside a 2025 BMW X3. Within 10 minutes we had access back in to the car with no damage.{"\n\n"}Professional and highly recommend."
+            </blockquote>
+            <footer className="mt-4 flex items-center justify-between">
+              <div>
+                <p className="text-sm font-semibold text-white">Jamie Allan</p>
+                <p className="text-xs text-[#C9A227]">Google Review</p>
+              </div>
+              <p className="text-xs text-white/40">2 weeks ago</p>
+            </footer>
+          </article>
+        </div>
+      </section>
+
       {/* What we help with */}
       <section className="py-14 px-4 bg-white" data-testid="section-services">
         <div className="max-w-4xl mx-auto">

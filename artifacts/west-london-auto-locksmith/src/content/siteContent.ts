@@ -26,13 +26,15 @@ export const siteContent = {
   },
   reviews: {
     googleReviewsUrl: "https://www.google.com/maps/place/West+London+Auto+Locksmith/@51.5392625,-0.4712062,17.64z/data=!4m6!3m5!1s0x2341289f576a5e79:0x78ccd061f5531765!8m2!3d51.5391116!4d-0.4703696!16s%2Fg%2F11njc3_w5j?entry=ttu&g_ep=EgoyMDI2MDYyMS4wIKXMDSoASAFQAw%3D%3D",
-    items: [] as Array<{
-      name: string;
-      rating: number;
-      text: string;
-      source: string;
-      date?: string;
-    }>,
+    items: [
+      {
+        name: "Jamie Allan",
+        rating: 5,
+        text: "Great service this morning, arrived in 20 minutes to assist the keys being locked inside a 2025 BMW X3. Within 10 minutes we had access back in to the car with no damage.\n\nProfessional and highly recommend.",
+        source: "Google",
+        date: "2 weeks ago",
+      },
+    ],
   },
   recentJobs: {
     photos: [] as Array<{
