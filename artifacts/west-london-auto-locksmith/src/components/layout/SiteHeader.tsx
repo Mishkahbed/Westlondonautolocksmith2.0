@@ -76,7 +76,18 @@ export default function SiteHeader() {
             <span className="text-[#C9A227]">★★★★★</span>
             <span className="text-white ml-1.5">5.0 on Google</span>
             <span className="text-[#C9A227]/50 mx-2">·</span>
-            <span className="text-white/70">Read our Google reviews</span>
+            {siteContent.reviews.googleReviewsUrl ? (
+              <a
+                href={siteContent.reviews.googleReviewsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 underline underline-offset-2 hover:text-white transition-colors"
+              >
+                Read our Google reviews
+              </a>
+            ) : (
+              <span className="text-white/70">Read our Google reviews</span>
+            )}
           </p>
 
           {/* Hamburger always accessible */}
