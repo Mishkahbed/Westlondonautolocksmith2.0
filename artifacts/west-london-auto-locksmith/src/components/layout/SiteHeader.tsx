@@ -61,7 +61,7 @@ export default function SiteHeader() {
         {/* Tagline strip — scrolls away with the logo */}
         <div className="bg-[#1a1a1a] border-t border-white/10 px-2 py-2 text-center overflow-hidden">
           <p className="text-white/80 text-xs font-medium tracking-wide whitespace-nowrap">
-            Vehicle lockout specialists&nbsp;·&nbsp;Price &amp; ETA confirmed before dispatch
+            Vehicle lockout specialists&nbsp;·&nbsp;Serving Uxbridge and surrounding areas
           </p>
         </div>
 
