@@ -6,8 +6,8 @@ export const siteContent = {
     phone: "020 3488 0390",
     phoneDisplay: "020 3488 0390",
     email: "info@westlondonautolocksmith.co.uk",
-    whatsappEnabled: false,
-    whatsappNumber: "",
+    whatsappEnabled: true,
+    whatsappNumber: "447723191544",
     baseArea: "Uxbridge",
     coverageRadius: "approximately 12 miles",
     coverageAreas: [

@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, MessageCircle } from "lucide-react";
 import { siteContent } from "@/content/siteContent";
 import { trackCallClick } from "@/lib/analytics";
 
@@ -55,6 +55,18 @@ export default function SiteFooter() {
               >
                 <Mail size={14} />
                 {siteContent.business.email}
+              </a>
+            )}
+            {siteContent.business.whatsappEnabled && siteContent.business.whatsappNumber && (
+              <a
+                href={`https://wa.me/${siteContent.business.whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-white/60 text-sm hover:text-[#25D366] transition-colors mt-2"
+                data-testid="link-whatsapp-footer"
+              >
+                <MessageCircle size={14} />
+                WhatsApp us
               </a>
             )}
           </div>
