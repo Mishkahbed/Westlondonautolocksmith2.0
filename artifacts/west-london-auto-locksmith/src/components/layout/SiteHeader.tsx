@@ -76,6 +76,16 @@ export default function SiteHeader() {
         </p>
       </div>
 
+      {/* Google reviews strip */}
+      <div className="bg-[#121212] border-t border-white/10 px-4 py-1 text-center">
+        <p className="text-[11px] tracking-wide">
+          <span className="text-[#C9A227]">★★★★★</span>
+          <span className="text-white/70 ml-1.5">5.0 on Google</span>
+          <span className="text-white/30 mx-2">·</span>
+          <span className="text-white/50 text-[10px]">Read our Google reviews</span>
+        </p>
+      </div>
+
       {/* Mobile/desktop nav drawer */}
       {menuOpen && (
         <div className="bg-[#2A2A2A] border-t border-white/10" data-testid="nav-menu">
