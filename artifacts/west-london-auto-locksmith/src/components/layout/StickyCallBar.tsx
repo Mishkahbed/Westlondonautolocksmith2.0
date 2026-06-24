@@ -1,4 +1,3 @@
-import { Phone } from "lucide-react";
 import { siteContent } from "@/content/siteContent";
 import { trackCallClick } from "@/lib/analytics";
 
@@ -13,13 +12,11 @@ export default function StickyCallBar() {
       <a
         href={hasPhone ? `tel:${siteContent.business.phone.replace(/\s/g, "")}` : "/contact"}
         onClick={() => trackCallClick("sticky")}
-        className="flex items-center justify-center gap-2 w-full bg-[#E8A020] text-[#1a2332] font-bold text-base rounded py-3 min-h-[52px] hover:bg-[#d4911c] transition-colors active:scale-[0.99]"
+        className="flex items-center justify-center gap-3 w-full bg-[#E8A020] text-[#1a2332] font-bold text-base rounded py-3 min-h-[52px] hover:bg-[#d4911c] transition-colors active:scale-[0.99]"
         data-testid="button-call-sticky"
       >
-        <Phone size={18} />
-        {hasPhone
-          ? `Call Now — ${siteContent.business.phone}`
-          : "Call to Check Availability"}
+        <img src="/images/key-logo.png" alt="" className="h-7 w-7 object-contain" aria-hidden="true" />
+        Call Now
       </a>
     </div>
   );
