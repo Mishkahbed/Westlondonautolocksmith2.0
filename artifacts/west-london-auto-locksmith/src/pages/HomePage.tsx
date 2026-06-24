@@ -72,26 +72,8 @@ export default function HomePage() {
           "Locked out of your car in West London? Call for a clear price and estimated arrival time before we travel.",
       }}
     >
-      {/* Call button — full-width, immediately below headers */}
-      <div className="bg-[#121212] px-4 pt-8 pb-4" data-testid="section-hero-cta">
-        <a
-          href={hasPhone ? `tel:${siteContent.business.phone.replace(/\s/g, "")}` : "/contact"}
-          onClick={() => trackCallClick("hero")}
-          className="flex items-center justify-center gap-3 w-full max-w-3xl mx-auto px-4 py-5 bg-[#C9A227] text-[#121212] font-bold text-base sm:text-xl rounded hover:bg-[#A88417] transition-colors min-h-[64px] whitespace-nowrap"
-          data-testid="button-call-hero"
-        >
-          <Phone size={24} />
-          {hasPhone ? `Call Now — ${siteContent.business.phone}` : "Call to Check Availability"}
-        </a>
-        {siteContent.pricing.showFromPrice && (
-          <p className="mt-3 text-center text-sm text-[#C9A227] font-medium">
-            {siteContent.pricing.approvedWording}
-          </p>
-        )}
-      </div>
-
-      {/* Hero heading + subtext */}
-      <section className="bg-[#121212] text-white pt-6 pb-6 px-4" data-testid="section-hero">
+      {/* Hero heading + call button */}
+      <section className="bg-[#121212] text-white pt-8 pb-6 px-4" data-testid="section-hero">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="font-bold leading-tight mb-3 text-white whitespace-nowrap">
             <span className="block text-2xl sm:text-3xl md:text-4xl">Locked Out of Your Car?</span>
@@ -99,6 +81,23 @@ export default function HomePage() {
           </h1>
           <p className="text-white/70 text-base">We specialise in vehicle lockouts</p>
           <p className="text-white/50 text-sm mt-1">Operating out of Uxbridge, we serve the whole of West London</p>
+
+          <div className="mt-6" data-testid="section-hero-cta">
+            <a
+              href={hasPhone ? `tel:${siteContent.business.phone.replace(/\s/g, "")}` : "/contact"}
+              onClick={() => trackCallClick("hero")}
+              className="flex items-center justify-center gap-3 w-full px-4 py-5 bg-[#C9A227] text-[#121212] font-bold text-base sm:text-xl rounded hover:bg-[#A88417] transition-colors min-h-[64px] whitespace-nowrap"
+              data-testid="button-call-hero"
+            >
+              <Phone size={24} />
+              {hasPhone ? `Call Now — ${siteContent.business.phone}` : "Call to Check Availability"}
+            </a>
+            {siteContent.pricing.showFromPrice && (
+              <p className="mt-3 text-sm text-[#C9A227] font-medium">
+                {siteContent.pricing.approvedWording}
+              </p>
+            )}
+          </div>
         </div>
       </section>
 
