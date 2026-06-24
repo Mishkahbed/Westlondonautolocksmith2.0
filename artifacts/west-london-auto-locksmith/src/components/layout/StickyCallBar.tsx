@@ -7,12 +7,12 @@ const hasPhone = siteContent.business.phone !== "PHONE_NUMBER_PLACEHOLDER";
 export default function StickyCallBar() {
   return (
     <div
-      className="fixed bottom-0 left-0 right-0 z-30 md:hidden bg-[#1a2332] border-t border-white/10 px-4 py-3"
+      className="fixed bottom-0 left-0 right-0 z-30 md:hidden bg-[#1a2332] border-t border-white/10 py-3"
       data-testid="sticky-call-bar"
     >
-      <div className="flex items-center gap-2">
-        {/* Logo — 1/4 width */}
-        <div className="w-1/4 flex items-center justify-center">
+      <div className="flex items-center">
+        {/* Logo — centred in the 1/4 space between screen edge and button */}
+        <div className="w-1/4 flex items-center justify-center shrink-0">
           <img
             src="/images/key-logo.png"
             alt=""
@@ -21,11 +21,11 @@ export default function StickyCallBar() {
           />
         </div>
 
-        {/* Call Now button — 3/4 width */}
+        {/* Call Now button — fills remaining 3/4 */}
         <a
           href={hasPhone ? `tel:${siteContent.business.phone.replace(/\s/g, "")}` : "/contact"}
           onClick={() => trackCallClick("sticky")}
-          className="w-3/4 flex items-center justify-center gap-2 bg-[#E8A020] text-[#1a2332] font-bold text-base rounded py-3 min-h-[52px] hover:bg-[#d4911c] transition-colors active:scale-[0.99]"
+          className="flex-1 flex items-center justify-center gap-2 bg-[#E8A020] text-[#1a2332] font-bold text-base rounded py-3 min-h-[52px] hover:bg-[#d4911c] transition-colors active:scale-[0.99]"
           data-testid="button-call-sticky"
         >
           <Phone size={18} />
