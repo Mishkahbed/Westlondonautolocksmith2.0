@@ -76,7 +76,7 @@ export default function SiteHeader() {
             <span className="text-[#C9A227]">★★★★★</span>
             <span className="text-white ml-1.5">5.0 on Google</span>
             <span className="text-[#C9A227]/50 mx-2">·</span>
-            <span className="text-white/70">Read our Google reviews (2 Reviews)</span>
+            <span className="text-white/70">Read our Google reviews</span>
           </p>
 
           {/* Hamburger always accessible */}
